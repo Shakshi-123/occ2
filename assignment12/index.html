@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- All JS libraries must be added before </head> -->
+    
+</head>
+<body>
+    <section>
+
+        <div>
+ 
+            <label for="hobby"></label>
+ 
+            <input type="text" name="hobby" id="hobby">
+ 
+            <button onclick="onClick()">Add</button>
+ 
+        </div> 
+ 
+        <div>
+ 
+            <h5>Your Hobbies</h5>
+ 
+             <ul id="hobbies">
+ 
+ 
+ 
+             </ul>
+ 
+        </div>
+ 
+ 
+ 
+     </section>
+    <!-- Any custom js code must be added before </body> -->
+    <script>
+
+        const hobby=document.getElementById("hobby");
+
+        const hobbies=document.getElementById("hobbies");
+
+        function onClick(){
+
+            const li=document.createElement("li");
+
+            li.innerText=hobby.value;
+
+            hobbies.appendChild(li);
+
+        }
+
+    </script>
+
+    </script>
+
+</body>
+</html>
