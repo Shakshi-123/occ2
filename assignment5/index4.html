@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button onclick="app1.decrement()">-</button>
+        <span id="result1">0</span>
+        <button onclick="app1.increment()">+</button>
+    </div>
+    <div>
+        <button onclick="app2.decrement()">-</button>
+        <span id="result2">0</span>
+        <button onclick="app2.increment()">+</button>
+    </div>
+
+<!-- always right your custom js just before the</body> tag -->
+    <script>
+        const app=function (id){
+                //inner variable 
+                let counter=0;
+                //inner functions
+                function inc(){
+                    counter=counter+1;
+                }
+                function dec(){
+                    counter=counter-1;
+                }
+                function setResult(){
+                    const span=document.getElementById(id);
+                    span.innerHTML=counter;
+                }
+                //we are exporting innerfunctions to outer function
+                return {
+                    increment:()=>{
+                        inc();
+                        setResult();
+                    },
+                    decrement:()=>{
+                        dec();
+                        setResult()
+                    },
+                    counterValue:()=>counter
+                }
+            }
+        
+        const app1=new app("result1");
+        const app2=new app("result2");
+    </script>
+</body>
+</html>
