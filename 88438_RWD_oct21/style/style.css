@@ -1,0 +1,139 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+.navbar-brand{
+    
+    margin-left: 150px;
+	
+}
+.navbar navbar-expand-lg navbar-light{
+    background-color: white;
+}
+
+
+/* for profile 1st col*/
+
+
+
+.box{
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+    border-radius: 2px;
+    transition: 0.3s ease;
+    height: 36em;
+    font-size: 14px;
+}
+
+.box:hover{
+    background: #16c9f6!important;
+}
+
+
+.box:hover p{
+    color:white;
+    
+}
+.box-2{
+    
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+    border-radius: 2px;
+    transition: 0.3s ease;
+    height: 31em;
+}
+
+.box-2:hover{
+    background: #16c9f6!important;
+}
+
+
+.box-2:hover p{
+    color:white;
+    
+}
+
+
+.carousel-indicators li{
+    background-color: #16c9f6!important;
+}
+
+.box a{
+    position: relative;
+}
+
+.box a img{
+    width:100px;
+    height:100px;
+    border-radius:80%;
+    margin-top: 5px;
+	
+
+	
+	
+}
+
+.box a:after{
+    content: "\f10d";
+    font-family: FontAwesome;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #1e5799 0%,#3ccdbb 0%,#16c9f6 100%);
+    color:white;
+    position: absolute;
+    top: 120%;
+    left:70%;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.abc{
+	font-size: 14px;
+	color:gray;
+	margin-left: 40px;
+	margin-bottom: 2px;
+}
+.xyz{
+	font-size: 14px;
+	color:black;
+	margin-left: 40px;
+	margin-bottom: 10px;
+}
+.def{
+	background-color: #021523;
+	text-align: center;
+    color: white;
+    padding: 16px 0;
+    font-size: 14px;
+    position: relative;
+}
+  .myprofile{
+    display: block;
+    background: #003d63;
+    padding: 1% 10%;
+    font-size: 20px;
+    color: #fff;}
+
+.jkl{
+    margin-right: 70px;
+    text-indent: 0cm;
+    font-size: 14px;
+    color: black;
+    margin-bottom: 20px;
+}	
+.bor{
+    border-style: dotted;
+}
+
+    .box-3{
+        border: 1px solid rgba(0,0,0,0.2);
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+        border-radius: 2px;
+        transition: 0.3s ease;
+        background-color:  #fcf8e3;
+        padding: 10px 10px 10px 10px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 14px;}
